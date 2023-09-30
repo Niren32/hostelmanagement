@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+  
+    center {
+      margin-top: 50px;
+    }
+  
+    h1 {
+      color: #333;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 550px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+  
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      font-size: 14px;
+      transition: border-color 0.3s ease-in-out;
+    }
+  
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="date"]:focus {
+      border-color: #4CAF50;
+    }
+  
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+  
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    button:hover {
+      background-color: #45a049;
+    }
+  
+    .button-29 {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .button-29:hover {
+      background-color: #45a049;
+    }
+  
+    @media (max-width: 480px) {
+      form {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+<center>
+<h2>House Kepping</h2>
+
+<form action="https://script.google.com/macros/s/AKfycbz5tMa01ypaOPfMgOCtCrnQ3sGw7rPVd5X93UK-ncwhMhQ8ThDwd2YtpmMNQqqWwG1wXQ/exec" method="post">
+  
+  <div class="container">
+    <label for="uname"><b>Name:</b></label>
+    <input type="text" placeholder="Enter Name" name="uname" required><br>
+
+    <label for="rno"><b>Room no.:</b></label>
+    <input type="text" placeholder="Enter Romm no." name="rno" required><br>
+    <label for="hname"><b>Hostel Name: </b></label>
+    
+  <select name="hostel">
+    <option value="hostel1">Hostel1</option>
+    <option value="hostel2">Hostel2</option>
+    <option value="hostel3">Hostel3</option>
+    <option value="hostel4">Hostel4</option>
+  </select><br><br>
+    <label for="fno"><b>Floor No.: </b></label>
+    <input type="number" placeholder="select Floor" name="fno" required><br>
+    <label for="time"><b>Time:</b></label>
+    <select name="time">
+    <option value="morning">Morning</option>
+    <option value="afternoon">Afternoon</option>
+  </select>  
+    
+  <br><br>
+    <label for="probleam"><b>Probleam:</b></label>
+    <input type="text" placeholder="Enter Probleam" name="probleam" required>
+    <br>
+    <input type="submit" class="button-29" value="submit" name="submit">
+  </div>
+</form>
+</center>
+</body>
+</html>
