@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gym Admission Form</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+        }
+      
+        center {
+          margin-top: 50px;
+        }
+      
+        h1 {
+          color: #333;
+        }
+      
+        form {
+          width: 100%;
+          max-width: 550px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          animation: fadeIn 0.3s ease-in-out;
+        }
+      
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      
+        label {
+          display: block;
+          margin-bottom: 10px;
+          color: #333;
+          font-weight: bold;
+          transition: color 0.3s ease-in-out;
+        }
+      
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"] {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+          font-size: 14px;
+          transition: border-color 0.3s ease-in-out;
+        }
+      
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        input[type="date"]:focus {
+          border-color: #4CAF50;
+        }
+      
+        input[type="radio"] {
+          margin-right: 5px;
+        }
+      
+        button {
+          background-color: #4CAF50;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s ease-in-out;
+        }
+      
+        button:hover {
+          background-color: #45a049;
+        }
+      
+        .button-29 {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          transition: background-color 0.3s ease-in-out;
+        }
+      
+        .button-29:hover {
+          background-color: #45a049;
+        }
+      
+        @media (max-width: 480px) {
+          form {
+            max-width: 300px;
+          }
+        }
+      </style>
+</head>
+
+<body>
+    <center>
+    <h1>Gym Admission Form</h1>
+    <form action="https://script.google.com/macros/s/AKfycbyzhf5KLMqxffL7X2TK4YQJerXWYVnpMDkzdjmPuUCcnUq0fPDyIIWqxQr4BrJcUsY3/exec" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="membership">Membership Type:</label>
+        <select id="membership" name="membership">
+            <option value="basic">Basic Membership (₹2000/Year) (1h/day)</option>
+            <option value="premium">Premium Membership (₹3000/Year) (2h/day)</option>
+            <option value="ultimate">Ultimate Membership (₹4500/Year)(No Limit)</option>
+        </select><br><br>
+
+        <label for="Gender">Gender:</label>
+        <input type="radio" id="Male" name="gender" value="Male" required>
+        <label for="credit_card">Male</label>
+        <input type="radio" id="Female" name="gender" value="Female" required>
+        <label for="paypal">Female</label><br><br>
+
+        <label for="payment code">payment code/ref id:</label>
+        <input type="text" id="card_number" name="payment code"><br><br>
+
+
+
+        <input type="submit" class="button-29" value="Submit">
+
+    </form>
+    </center>
+</body>
+
+</html>

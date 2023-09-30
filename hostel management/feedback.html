@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hostel Feedback Form</title>
+  <style> body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+  
+    center {
+      margin-top: 50px;
+    }
+  
+    h1 {
+      color: #333;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 400px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+  
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      font-size: 14px;
+      transition: border-color 0.3s ease-in-out;
+    }
+  
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="date"]:focus {
+      border-color: #4CAF50;
+    }
+  
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+  
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    button:hover {
+      background-color: #45a049;
+    }
+  
+    .button-29 {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .button-29:hover {
+      background-color: #45a049;
+    }
+  
+    @media (max-width: 480px) {
+      form {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body><center>
+    <h1>Hostel Feedback Form</h1>
+    <form action="https://script.google.com/macros/s/AKfycbxEJAlNY-hLXKcYfyuxBUe5eNmFLTIIvUbw4XdetgcGmnODm9y6-kmDucl3TEFwc9CNBw/exec" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="">Select a rating</option>
+            <option value="5">Excellent</option>
+            <option value="4">Good</option>
+            <option value="3">Average</option>
+            <option value="2">Below Average</option>
+            <option value="1">Poor</option><br><br>
+        </select><br><br>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea><br><br>
+
+        <button class"button-29">Submit</button>
+    </form></center>
+</body>
+</html>

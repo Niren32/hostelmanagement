@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+  
+    center {
+      margin-top: 50px;
+    }
+  
+    h1 {
+      color: #333;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 550px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+  
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      font-size: 14px;
+      transition: border-color 0.3s ease-in-out;
+    }
+  
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="date"]:focus {
+      border-color: #4CAF50;
+    }
+  
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+  
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    button:hover {
+      background-color: #45a049;
+    }
+  
+    .button-29 {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .button-29:hover {
+      background-color: #45a049;
+    }
+  
+    @media (max-width: 480px) {
+      form {
+        max-width: 300px;
+      }
+    }
+  </style>
+  
+	<title>Hostel Admission Form</title>
+</head>
+<body><center>
+	<h1>Hostel Admission Form</h1>
+	<form action="https://script.google.com/macros/s/AKfycbwffmKtLfkBBzBm-WbmrInSs6NpRD1a8pV3bl3I0ihkHg_Uq4rIXCoXwkfltvWookjz/exec" method="post">
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name" required>
+
+		<label for="email">Email ID:</label>
+		<input type="email" name="email" id="email" required><br><br>
+
+		<label for="phone">Phone Number:</label>
+		<input type="tel" name="phone" id="phone" required><br><br>
+
+		<label for="courses">Course(s):</label>
+		<input type="text" name="courses" id="courses" required><br><br>
+
+		<label for="institute">Institute:</label>
+		<input type="text" name="institute" id="institute" required><br><br>
+
+		<label for="hostel">Select Hostel:</label><br>
+		<input type="radio" name="hostel" id="boys" value="Boys Hostel" required>
+		<label for="boys">Boys Hostel</label><br>
+		<input type="radio" name="hostel" id="girls" value="Girls Hostel" required>
+		<label for="girls">Girls Hostel</label><br>
+		<input type="radio" name="hostel" id="co-ed" value="Co-ed Hostel" required>
+		<label for="co-ed">Co-ed Hostel</label><br><br>
+
+		<label for="checkin">Date of Check-in:</label>
+		<input type="date" name="checkin" id="checkin" required><br><br>
+
+		<label for="checkout">Date of Check-out:</label>
+		<input type="date" name="checkout" id="checkout" required><br><br>
+
+		<label for="emergency_contact_name">Emergency Contact Name:</label>
+		<input type="text" name="emergency name" id="emergency_contact_name" required><br><br>
+
+		<label for="emergency_contact_phone">Emergency Contact Phone Number:</label>
+		<input type="tel" name="emergency phone" id="emergency_contact_phone" required><br><br>
+
+		
+
+<button class="button-29">Submit</button>
+	</form></center>
+</body>
+</html>
